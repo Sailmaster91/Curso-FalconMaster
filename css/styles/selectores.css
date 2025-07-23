@@ -1,0 +1,39 @@
+* {
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+	color:rgb(61, 55, 65);
+	font-size: 16px;
+}
+
+nav a {
+	text-decoration: none;
+	color: blueviolet;
+	font-size: 18px;
+	padding-left: 30px;
+
+}
+
+article{
+	color:rgb(112, 25, 64);
+}
+
+main p a {
+	color: hsl(0, 100%, 58%);
+	text-decoration: none;
+	font-size: 1.em;
+	font-weight: 600;
+}
+
+main a {
+	color: blueviolet;
+	text-transform: lowercase;
+	text-decoration-style: dotted;
+}
