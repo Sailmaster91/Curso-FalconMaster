@@ -1,0 +1,57 @@
+* {
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	margin:0;
+}
+.menu{
+	font-family: "Agave Nerd Font";
+	background-color: lightgray;
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h2{
+	font-size: 26px;
+	line-height: 1.5;
+	color: darkslategrey;
+}
+/*Hijos directos*/
+nav > a {
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: "Agave Nerd Font";
+	color: darkslateblue;
+
+}
+.sub_menu h2{
+	font-size: 20px;
+	color: rgba(47, 79, 79, 0.461);
+}
+.sub_menu{
+	margin-top: 20px;
+}
+.sub_menu a{
+	text-decoration: none;
+	color: rgb(0, 192, 93);
+}
+
+header + h3{
+	padding-left: 40px;
+	margin-top: 40px;
+}
+/*Todos los hermanos*/
+header ~ p
+{
+	padding-left: 60px;
+	margin-top: 20px;
+	color: blueviolet;
+}
+/*Primer hermano*/
+h3 + p
+{
+	color: blue;
+}
+
