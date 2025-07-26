@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    text-align: center;
+}
+
+
+.btn{
+    display: inline-block;
+    border: 0;
+    padding: 15px;
+    font-family: "TikTok Sans", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 30px;
+    transition: .2s ease-in all;
+    &:focus{   
+        outline: 2px solid black;
+    }
+    &.btn-redondo{
+        background-color: rgb(20, 19, 19);
+        color: #ffffff;
+        border-radius: 50px;
+        &:hover{
+            background-color:rgba(20, 19, 19, 0.767);
+        }
+    }
+    &.btn-cuadrado{
+        background-color: #5294E2;
+        border: 1px solid hsl(213, 65%, 50%);
+        &:hover{
+            background-color: #E25294;
+            color: #182b42;
+        }
+    }
+    &.btn-gradient{
+        background: linear-gradient(to left, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border-radius: 50px;
+        &:hover{
+            background: linear-gradient(to top, #3f2b96, #a8c0ff);
+            color: #ebe7ff;
+        }
+    }
+    &.btn-sombra{
+        border: 1px solid #182b42;
+        border-radius: 5px;
+        box-shadow: 5px 5px 0 0 ;
+        background-color: #ffe600;
+        transform: translate(-5px, -5px);
+        &:hover{
+            box-shadow: 0px 0px 0 0 ;
+            transform: translate(0px, 0px);
+            background-color: #ff9900;
+        }
+    }
+    &.btn-outline{
+        background-color: transparent;
+        border: 2px solid green;
+        border-radius: 4px;
+        color: green;
+    &:hover{
+            background-color: #b4e0a9;
+            border-radius: 10px;
+        }
+    }
+   
+}   
+.btn-icono{
+        background-color: #ff9999;
+        color: aliceblue;
+        border-radius: 4px;
+        display: inline-flex;
+        padding: 18px;
+        gap: 10px;
+        transition: .5s ease all;
+       
+        span{
+              color: rgb(236, 58, 58);
+            transition: 1s ease color;
+     
+        }
+        &:hover span{
+                color:white;
+        }
+
+        svg{
+            transform: translate(0px, 0px);
+            transition: .2s ease all;
+        }
+        &:hover svg
+        {
+            transform: translate(3px, 0px);
+            color: rgb(236, 58, 58);
+        }
+
+
+}
+.btn-icono:hover{
+
+            background: rgb(48, 2, 2);
+        }
