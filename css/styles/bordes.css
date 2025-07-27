@@ -1,0 +1,48 @@
+body{
+	background-color: #f2f2f2;
+}
+
+p{
+	background-color: white;
+	padding: 20px;
+	text-align: center;
+	&.solid{
+		border: 2px solid black;
+	}
+	&.dotted{
+		border: 2px dotted black;
+
+	}
+	&.dashes{
+		border: 2px dashed black;
+
+	}
+	&.groove{
+		border: 10px groove black;
+
+	}
+	&.ridge{
+		border: 10px ridge black;
+
+	}
+	&.inset{
+		border: 10px inset black;
+
+	}
+	&.outset{
+		border: 10px outset black;
+
+	}
+	&.transparent{
+		border: 10px solid transparent;
+
+	}
+	&.transparent:hover{
+		border: 10px solid black;
+	}
+	&.multiborder{
+		border-top: 3px solid black;
+		border-bottom: 5px double gray;
+		border-left: 3px dotted;
+	}
+}

@@ -1,0 +1,36 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.inline-b{
+	display: inline-block;
+	background-color: rgb(172, 172, 231);
+}
+
+div{
+	width: 400px;
+	height: 400px;
+}
+p{
+	background-color: chartreuse;
+	width: 400px;
+	height: 250px;
+
+}
+a{
+	background-color: cadetblue;
+	padding: 30px;
+	vertical-align: top;
+
+}
+img{
+	vertical-align: top;
+}
+
+
+/* Oculta los elementos con display none pero siguen en el codigo*/
+.displaynone{
+	display: none;
+}
