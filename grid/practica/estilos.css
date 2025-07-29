@@ -1,0 +1,54 @@
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+
+body{
+	font-family: Ubuntu, sans-serif;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f2f2;
+    height: 100vh;
+}
+
+.contenedor-principal{
+	width: 90%;
+	max-width: 1000px;
+
+
+	.grid{
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-template-rows: repeat(5, 1fr);
+		height: 90vh;
+		gap: 10px;
+		grid-template-areas: "header header header"
+							  "main main aside"
+							  "main main aside"
+							  "main main aside"
+							  "footer footer footer";
+	}
+	.contenedor{
+		background-color: rgb(28, 28, 28);
+		color: aliceblue;
+		border-radius: 10px;
+		padding: 20px;
+	}
+
+	header{
+		grid-area: header;
+	}
+	main{
+		grid-area: main;
+	}
+	aside{
+		grid-area: aside;
+	}
+	footer{
+		grid-area: footer;
+	}
+}

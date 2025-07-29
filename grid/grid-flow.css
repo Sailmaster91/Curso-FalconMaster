@@ -1,0 +1,25 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-auto-flow: column dense; /* Rellena todo el espacio con la siguiente que esta libre */
+}
+
+.uno{
+	grid-column: span 2;
+}
+
+.dos{
+	grid-column: auto;
+	grid-row: 1/4;
+}
+
+.tres{
+	grid-column: span 2;
+}
