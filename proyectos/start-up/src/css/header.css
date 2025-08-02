@@ -1,0 +1,48 @@
+
+.contenedor-header{
+	width: 100%;
+	max-width: 1000px;
+
+
+	header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 40px;
+		.logo{
+			width: auto;
+			max-height: 100px;
+			background-color: var(--azul-oscuro);
+			border-radius: 10px 0 0 0;
+			position:relative;
+			&::before{
+				content: "";
+				position: absolute;
+				width: 100%;
+				bottom: -29.5px;
+				height: 30px;
+				right: 0;
+				background-color: var(--azul-oscuro);
+			}
+			&::after{
+				content: "";
+				position: absolute;
+				right: -53.5px;
+				bottom: -15px;
+			
+				border-right: 54px solid transparent;
+				border-top: 54px solid transparent;
+				border-bottom: 70px solid var(--azul-oscuro);
+
+			}
+		}
+
+		.navbar{
+			display: inline-flex;
+			gap: 20px;
+			.boton{
+				padding: 10px;
+			}
+		}
+	}
+}

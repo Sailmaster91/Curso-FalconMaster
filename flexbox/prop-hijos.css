@@ -41,12 +41,13 @@ body{
 	&.basis{
 		.caja{
 			flex-basis: 200px;
-		
+		&:nth-child(2){
+			color: rgb(219, 250, 128);
+			background-color: rgb(30, 155, 35);
+			flex-shrink: 3;
+		}
 		}
 
 	}
-	&:nth-child(3){
-	color: aqua;
-	}
-	
+x
 }

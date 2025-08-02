@@ -1,0 +1,12 @@
+:root{
+	--azul-primario:rgb(13, 49, 232);
+	--azul-secundario:#1833bf;
+	--azul-oscuro:hsl(230, 60%, 15%);
+
+	--shade-09: #1a1a1a;
+	--shade-07: #484848;
+	--shade-05: #767676;
+	--shade-03: #bababa;
+	--shade-01: #e8e8e8;
+
+}
