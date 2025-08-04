@@ -17,4 +17,6 @@
 
 	--size20: clamp(10px, 3vw, 20px);
 
+	--size32: clamp(24px, 3vw, 32px);
+
 }

@@ -37,12 +37,20 @@
 			}
 		}
 
+
+	}
+}
+
 		.navbar{
 			display: inline-flex;
 			gap: 20px;
-			.boton{
+			align-items: center;
+
+			.boton-enlace{
 				padding: 10px;
+			&:hover{
+				background-color: var(--azul-secundario);
 			}
 		}
-	}
-}
+		
+		}

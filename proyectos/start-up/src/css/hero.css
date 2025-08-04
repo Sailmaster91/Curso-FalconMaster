@@ -7,7 +7,7 @@
 	position: relative;
 	z-index: 1;
 	gap: 20px;
-	padding: 40px 20px;
+	padding: var(--size40);
 	color: white;
 	border-radius: 20px;
 
@@ -17,12 +17,13 @@
 		justify-content: center;
 		gap: 20px;
 		.hero-titulo{
-						font-size: 32px;
+						font-size: 42px;
 						margin:0;
 		}
 		.descripcion{
 			margin: 0;
 			line-height: 160%;
+			font-size: clamp(16px, 3vw, 18px);
 		}
 		.botones{
 			display: flex;
@@ -65,13 +66,15 @@
 
 	.col-2{
 		position: relative;
+
 		
 		.slideshow{
-			width: 90%;
+			width: 70%;
 			position: absolute;
 			border-radius: 20px;
 			overflow: hidden;
 			top: -10px;
+			right: var(--size40);
 
 
 			.slides{

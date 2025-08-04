@@ -1,0 +1,57 @@
+.planes{
+    width: 100%;
+    margin-bottom: 100px;
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--size20);
+       
+        .plan{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+            gap: var(--size32);
+            padding: var(--size20);
+            background: white;
+            border-radius: 5px;
+            .plan-nombre{
+                font-size: var(--size32);
+                line-height: 150%;
+                margin: 0;
+            }
+            &.especial{
+                background-color: var(--azul-oscuro);
+                color: white;
+                .plan-precio{
+                    color: var(--shade-01);
+                }
+            }
+            .plan-precio{
+                font-size: 32px;
+                font-weight: 700;
+                color: var(--azul-oscuro);
+                span{
+                    font-size: var(--size20);
+                    font-weight: 400;
+                    color: var(--shade-05);
+                }
+            }
+            .plan-descripcion{
+                line-height: 160%;
+            }
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: var(--size16);
+                .icono{
+                    color: var(--azul-primario);
+                }
+                li{
+                    display: flex;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
