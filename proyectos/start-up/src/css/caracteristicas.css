@@ -1,0 +1,73 @@
+
+
+.caracteristicas{
+    margin: 160px 0 120px 0;
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: var(--size20);
+
+        .previews{
+            width: 100%;
+            position: relative;
+            background-color: black;
+            overflow: hidden;
+            border-radius: 6px;
+
+            .thumb{
+                width: 100%;
+                position: absolute;
+                display: none;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                vertical-align: top;
+                transition: .5s ease all;
+
+                &.activa{
+                    display: inline-flex;
+                }
+            }
+        }
+
+        .tabs{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            .tab{
+                background-color: white;
+                display: flex ;
+                align-items: center;
+                cursor: pointer;
+                border-radius: 8px;
+                padding: 5px;
+                transition: .2s ease-in all;
+                &:hover{
+                    background-color: var(--azul-primario);
+                    color: var(--shade-01);
+                }
+                .icono{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    svg{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                .info{
+                    padding: 10px;
+                    display: flex;
+                    gap: 10px;
+                    flex-direction: column;
+                    h2{
+                        margin:0;
+                    }
+                }
+            }
+        }
+    }
+
+}

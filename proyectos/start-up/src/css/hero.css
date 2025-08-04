@@ -16,7 +16,7 @@
 		flex-direction: column;
 		justify-content: center;
 		gap: 20px;
-		.titulo{
+		.hero-titulo{
 						font-size: 32px;
 						margin:0;
 		}

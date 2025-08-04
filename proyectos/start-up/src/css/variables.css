@@ -9,4 +9,12 @@
 	--shade-03: #bababa;
 	--shade-01: #e8e8e8;
 
+	/* Tamanos Estandar */
+
+	--size40: clamp(30px, 5vw, 40px);
+
+	--size16: clamp(14px, 3vw, 16px);
+
+	--size20: clamp(10px, 3vw, 20px);
+
 }
