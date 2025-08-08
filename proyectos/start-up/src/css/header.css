@@ -2,7 +2,13 @@
 .contenedor-header{
 	width: 90%;
 	max-width: 1250px;
-
+	@media screen and (max-width: 650px) {
+		&{
+			width: 100%;
+			max-width: none;
+		}
+		
+	}
 
 	header{
 		display: flex;
@@ -36,11 +42,6 @@
 
 			}
 		}
-
-
-	}
-}
-
 		.navbar{
 			display: inline-flex;
 			gap: 20px;
@@ -54,3 +55,32 @@
 		}
 		
 		}
+
+	@media screen and (max-width: 650px) {
+		&{		
+			flex-direction: column;
+			padding-bottom: var(--size20);
+			gap: var(--size10);
+			.logo{
+				border-radius: 5px;
+				&::before{
+					display: none;
+				}
+				&::after{
+					display: none;
+				}
+			}
+			.navbar{
+				justify-content: center;
+				flex-wrap: wrap;
+				gap: var(--size16);
+			}
+	
+		}
+		
+	}
+	}
+
+}
+
+		

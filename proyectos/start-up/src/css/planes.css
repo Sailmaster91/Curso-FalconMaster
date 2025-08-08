@@ -1,10 +1,17 @@
 .planes{
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: clamp(50px, 5vw, 100px);
     .grid{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: var(--size20);
+        @media screen and (max-width: 650px) {
+            &{
+                grid-template-columns: 1fr;
+
+        }
+            
+        }
        
         .plan{
             display: flex;
@@ -14,6 +21,8 @@
             padding: var(--size20);
             background: white;
             border-radius: 5px;
+            
+
             .plan-nombre{
                 font-size: var(--size32);
                 line-height: 150%;
@@ -27,7 +36,7 @@
                 }
             }
             .plan-precio{
-                font-size: 32px;
+                font-size: var(--size32);
                 font-weight: 700;
                 color: var(--azul-oscuro);
                 span{
@@ -38,6 +47,7 @@
             }
             .plan-descripcion{
                 line-height: 160%;
+                font-size: var(--size16);
             }
             ul{
                 list-style: none;
@@ -50,7 +60,14 @@
                 li{
                     display: flex;
                     gap: 10px;
+                    font-size: var(--size16);
                 }
+            }
+            @media screen and (max-width:650px) {
+                &{
+                    gap: 10px;
+                }
+                
             }
         }
     }

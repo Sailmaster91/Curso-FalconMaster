@@ -1,7 +1,7 @@
 
 
 .caracteristicas{
-    margin: 160px 0 120px 0;
+    margin: 160px 0  clamp(50px, 5vw, 100px) 0;
 
     .grid{
         display: grid;
@@ -53,21 +53,45 @@
                     display: flex;
                     align-items: center;
                     svg{
-                        width: 30px;
-                        height: 30px;
+                        width: var(--size32);
+                        height: var(--size32);
                     }
                 }
                 .info{
                     padding: 10px;
                     display: flex;
-                    gap: 10px;
+                    gap: var(--size10);
                     flex-direction: column;
                     h2{
                         margin:0;
+                        font-size: var(--size20);
+                    }
+                    p{
+                        font-size: var(--size16);
                     }
                 }
             }
         }
+    }
+    @media screen and (max-width: 650px) {
+        &{
+            margin-top: var(--size40);
+            .grid{
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr;
+                justify-items: center;
+                .previews{
+                    width: 80%;
+                    min-height: 250px;
+
+                    .thumb{
+                        height: 100%;
+                    }
+                                  }
+
+            }
+        }
+        
     }
 
 }

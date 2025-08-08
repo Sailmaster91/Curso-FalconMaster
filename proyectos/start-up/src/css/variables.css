@@ -12,10 +12,11 @@
 	/* Tamanos Estandar */
 
 	--size40: clamp(30px, 5vw, 40px);
+	--size10: clamp(6px, 3vw, 110px);
 
 	--size16: clamp(14px, 3vw, 16px);
 
-	--size20: clamp(10px, 3vw, 20px);
+	--size20: clamp(16px, 3vw, 20px);
 
 	--size32: clamp(24px, 3vw, 32px);
 

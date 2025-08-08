@@ -23,7 +23,34 @@ footer{
     .nav-footer{
         a{
             color: white;
-        text-decoration: none;}
+        text-decoration: none;
+        transition: .3s ease all;
+        &:hover{
+            color: aqua;
+            text-decoration: underline;
+        }
+    }
 
+    }
+    @media screen and (max-width:650px) {
+        &{
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0;
+            margin-bottom: 0;
+            .logo{
+                order: 2;
+                align-items: center;
+            }
+            .nav-footer{
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                font-size: var(--size16);
+            }
+        }
+        
     }
 }
